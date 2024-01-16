@@ -8,9 +8,6 @@
     "start": "node server.js",
     "lint": "next lint"
   },
-  "engines": {
-    "node": "18.12.1"
-  },
   "dependencies": {
     "@azure/msal-browser": "3.5.0",
     "@types/node": "20.2.5",
