@@ -10,6 +10,7 @@ const hostname = 'localhost'
 const port = process.env.PORT || 4000
 
 console.log("NODE_ENV ->", dev);
+
 console.log("PORT ->", port);
 
 // when using middleware `hostname` and `port` must be provided below
