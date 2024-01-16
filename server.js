@@ -13,7 +13,7 @@ console.log("NODE_ENV ->", dev);
 console.log("PORT ->", port);
 
 // when using middleware `hostname` and `port` must be provided below
-const app = next({ dev: false, hostname, port })
+const app = next({ hostname, port })
 const handle = app.getRequestHandler()
 
 app.prepare().then(() => {
