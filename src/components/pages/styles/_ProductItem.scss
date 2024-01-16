@@ -1,0 +1,36 @@
+.ProductItem{
+  @apply p-4 bg-gray-100 rounded-lg;
+  
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+  
+  .image-container {
+    @apply bg-white rounded-lg grid items-center;
+    position: relative;
+    img{
+      @apply bg-white rounded-lg;
+      z-index: 2;
+      object-fit: cover;
+    }
+    svg{
+      z-index: 1;
+      position: absolute;
+      top: calc(50% - (40px / 2));
+      left: calc(50% - (40px / 2));
+    }
+  }
+  
+  &-info{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    
+    &-details{
+      @apply pb-4;
+    }
+  }
+  
+  &-action{
+    @apply px-3 py-2 text-white text-xs font-bold uppercase rounded;
+  }
+}

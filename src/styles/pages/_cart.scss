@@ -1,0 +1,29 @@
+.Table{
+  @apply text-sm text-gray-500 dark:text-gray-400 shadow-md sm:rounded-lg;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  thead{
+    @apply text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400;
+    th{
+      @apply text-left;
+    }
+  }
+  
+  tbody{
+    
+    tr{
+      @apply bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600;
+      
+      td{
+        @apply px-6 py-4;
+      }
+    }
+    
+    a {
+      @apply font-medium text-blue-600 dark:text-blue-500 hover:underline;
+    }
+    
+  }
+}

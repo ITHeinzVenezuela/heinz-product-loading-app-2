@@ -1,0 +1,68 @@
+$switch-color: #5f616d;
+$secondary-font-color: #5f616d;
+
+$switch-height: 20px;
+$switch-padding: 2px;
+
+.Switch {
+  color: $secondary-font-color;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  @apply font-semibold;
+
+  &__title {
+    @apply text-black text-sm;
+    cursor: pointer;
+  }
+
+  // @media screen and (min-width: 576px) {
+  //   padding: 20px;
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   padding: 40px 20px;
+  // }
+
+  input {
+    display: none;
+  }
+
+  input:checked+.Switch__switch {
+    @apply bg-secondary;
+    // background-color: transparent;
+    // background: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
+
+    .Switch__switch--toggle {
+      right: calc(0% + $switch-padding);
+    }
+  }
+
+  &__switch {
+    position: relative;
+    cursor: pointer;
+    // transition: .3s;
+
+    width: $switch-height * 1.8;
+    height: $switch-height;
+    padding: $switch-padding;
+
+
+    border-radius: 25px;
+    background-color: $switch-color ;
+
+    &--toggle {
+      $toggle-size: $switch-height - (2 * $switch-padding);
+      position: absolute;
+      top: calc(0% + $switch-padding);
+      right: calc(100% - ($switch-height - $switch-padding));
+      transition: .3s right;
+      width: $toggle-size;
+      height: $toggle-size;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+  }
+}

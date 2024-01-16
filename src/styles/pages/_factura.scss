@@ -1,0 +1,21 @@
+.Bill {
+  @apply mt-8;
+
+  .header {
+    ul {
+
+      span,
+      li {
+        @apply text-base;
+      }
+
+      li {
+        @apply mb-4;
+
+        span {
+          @apply font-bold;
+        }
+      }
+    }
+  }
+}

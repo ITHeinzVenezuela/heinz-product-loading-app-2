@@ -1,0 +1,18 @@
+.BulletinDetailsModal{
+  overflow: auto;
+  align-items: start !important;
+  padding-top: 5rem;
+  
+  .Table {
+    @apply mb-20;
+    thead th{
+      @apply text-center;
+    }
+    tbody th{
+      @apply p-4;
+    }
+    th span{
+      @apply text-xs;
+    }
+  }
+}

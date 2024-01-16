@@ -1,0 +1,52 @@
+.ProductSkeleton {
+  @apply animate-pulse;
+  @apply p-4 bg-gray-100 rounded-lg;
+  // max-height: 175px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+  // background-color: black;
+  
+  &:nth-of-type(4n + 2){
+    // background-color: red;
+    animation-duration: 2s;
+  }
+  &:nth-of-type(4n + 3){
+    // background-color: cyan;
+    animation-duration: 3s;
+  }
+  &:nth-of-type(4n + 4){
+    // background-color: green;
+    animation-duration: 4s;
+  }
+
+  .image-container {
+    @apply bg-slate-200 rounded-lg;
+    img{
+      @apply rounded-lg;
+      object-fit: contain;
+      filter: grayscale(100%);
+      opacity: .7;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    h4{
+      @apply block bg-slate-300 mb-7;
+      height: 15px;
+    }
+    
+    small {
+      @apply block bg-slate-200 mb-5;
+      height: 10px;
+    }
+    
+    &--button{
+      @apply bg-slate-300 rounded;
+      height: 28px;
+    }
+  }
+}

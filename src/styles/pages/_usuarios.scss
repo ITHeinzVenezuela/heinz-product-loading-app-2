@@ -1,0 +1,13 @@
+.UsersTable{
+  th{
+    @apply px-6 py-3;
+  }
+  
+  tbody th:nth-of-type(3){
+    @apply font-normal;
+  }
+  
+  button{
+    
+  }
+}

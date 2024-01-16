@@ -1,0 +1,31 @@
+.MyOrders {
+
+  &__title {
+    @apply pb-4 text-3xl font-bold;
+  }
+
+  &__options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+    gap: 20px;
+
+    input, button{
+      height: 38px;
+      padding: 0;
+    }
+
+    button{
+      @apply font-bold;
+    }
+    
+    label[for="date-from"]:first-of-type {
+      grid-area: date-from;
+    }
+
+    label[for="date-to"]:nth-of-type(2) {
+      grid-area: date-to;
+    }
+      
+  }
+}

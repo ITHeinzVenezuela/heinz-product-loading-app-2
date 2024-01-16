@@ -1,0 +1,31 @@
+%Employees{
+  @apply p-2 rounded-xl border border-gray-400;
+  max-height: 350px;
+}
+
+.Employees {
+  display: grid;
+  grid-template-rows: auto minmax(auto, 350px);
+  gap: 10px;
+  
+  .main_container{
+    @apply overflow-x-auto;
+    @extend %Employees;
+    height: 100%;
+    overflow-y: auto;
+    text-overflow: clip;
+    display: grid;
+    gap: 5px;
+    align-content: start;
+  }
+  
+  &_skeleton{
+    @extend %Employees;
+    @apply animate-pulse bg-slate-200 border-0;
+    height: 350px;
+    
+    &:nth-of-type(1){
+      animation-duration: 1s;
+    }
+  }
+}

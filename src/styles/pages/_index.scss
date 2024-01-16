@@ -1,0 +1,47 @@
+.Home{
+  @apply pt-8;
+  
+  .main_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    
+    // @screen md{
+    //   grid-template-columns: 250px 1fr;
+    // }
+    
+    aside{
+      @apply hidden md:block p-6 bg-slate-100 rounded-xl;
+      min-height: 400px;
+      align-self: flex-start;
+      
+      section{
+        @apply py-6;
+        &:nth-of-type(1){
+          @apply pt-0;
+        }
+        h2{
+          @apply font-bold;
+        }
+        li{
+          @apply text-sm;
+        }
+        a{
+          @apply text-blue-700;
+        }
+      }
+      
+      hr{
+        @apply border-black;
+      }
+    }
+    
+    section{
+      // max-width: 600px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      align-self: flex-start;
+      gap: 10px;
+    }
+  }
+}

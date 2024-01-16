@@ -1,0 +1,49 @@
+{
+  "name": "heinz-product-loading-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "node server.js",
+    "lint": "next lint"
+  },
+  "engines": {
+    "node": "18.12.1"
+  },
+  "dependencies": {
+    "@azure/msal-browser": "3.5.0",
+    "@types/node": "20.2.5",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "autoprefixer": "10.4.14",
+    "axios": "1.4.0",
+    "date-fns": "2.30.0",
+    "dotenv": "16.1.4",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.4",
+    "jsonwebtoken": "9.0.2",
+    "next": "13.4.4",
+    "next-auth": "4.24.4",
+    "postcss": "8.4.24",
+    "qrcode": "1.5.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "4.10.1",
+    "read-excel-file": "5.6.1",
+    "sequelize": "6.32.1",
+    "speakeasy": "2.0.0",
+    "tailwindcss": "3.3.2",
+    "tedious": "16.1.0",
+    "typescript": "5.0.4",
+    "xlsx": "0.18.5",
+    "zod": "3.21.4"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "9.0.2",
+    "@types/qrcode": "1.5.2",
+    "@types/speakeasy": "2.0.7",
+    "@types/tedious": "4.0.9",
+    "sass": "1.62.1"
+  }
+}

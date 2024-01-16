@@ -1,0 +1,29 @@
+.SelectEmployees{
+  
+  .input-list{
+    @apply pt-20 gap-8;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .Input{
+    span{
+      @apply font-semibold;
+    }
+    
+    input, select{
+      @apply py-2;
+    }
+  }
+  
+  textarea{
+    min-height: 150px;
+  }
+  
+  .Employee-grid{
+    @apply pb-10 gap-8;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+  }
+}

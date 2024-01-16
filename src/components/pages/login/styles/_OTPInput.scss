@@ -1,0 +1,71 @@
+.OTPInput {
+
+  .inputs {
+    @apply flex justify-start gap-2 sm:gap-6;
+  }
+
+  input {
+    @apply border-2 rounded-3xl appearance-none border-gray-400;
+    @apply focus:border-secondary text-center;
+    @apply text-lg font-bold;
+    @apply py-2 px-4;
+    
+    width: 4rem;
+    height: 5rem;
+    
+    // @screen {
+    //   @apply text-mobile-body-1;
+    //   width: 4.8rem;
+    //   height: 5.6rem;
+    // }
+    
+    @screen sm{
+      @apply py-6 px-10;
+      width: 6.5rem;
+      height: 6.7rem;
+    }
+    
+    @screen xl{
+      width: 7.2rem;
+      height: 8rem;
+    }
+    
+    outline: none;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    // &:invalid{
+    //   @apply text-primary border-primary;
+    // }
+  }
+
+  p {
+    @apply pt-10 text-primary hidden;
+  }
+
+  &.invalid {
+    input {
+      @apply text-primary border-primary border-2;
+    }
+  }
+}
+
+form.validated {
+  .OTPInput {
+    input{
+      &:valid{
+        @apply border-green-500;
+      }
+      &:invalid{
+        @apply border-primary;
+      }
+    }
+    p {
+      display: block;
+    }
+  }
+}

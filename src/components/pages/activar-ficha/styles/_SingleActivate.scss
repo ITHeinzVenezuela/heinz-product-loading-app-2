@@ -1,0 +1,23 @@
+.SingleActivate{
+  
+  &__title{
+    @apply pb-4 text-xl sm:text-2xl font-semibold;
+  }
+  
+  #activar-ficha{
+    @apply rounded-r-none;
+  }
+  
+  .activation-input{
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  
+  .Button{
+    @apply rounded-l-none rounded-r-xl;
+    
+    span{
+      @apply text-white font-semibold text-base sm:text-lg;
+    }
+  }
+}

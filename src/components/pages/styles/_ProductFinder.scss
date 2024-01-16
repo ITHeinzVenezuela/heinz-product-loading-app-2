@@ -1,0 +1,19 @@
+.ProductFinder{
+  @apply py-4 bg-slate-200 px-5 sm:px-10;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  
+  @screen sm{
+    grid-template-columns: auto 1fr auto;
+  }
+  
+  & > span{
+    align-self: center;
+  }
+  
+  button{
+    @apply px-5 py-3 text-sm;
+  }
+}

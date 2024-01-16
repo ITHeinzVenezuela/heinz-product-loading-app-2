@@ -1,0 +1,41 @@
+.LogIn{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(auto, 450px);
+  // justify-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  
+  img{
+    position: relative;
+    max-width: 200px;
+    justify-self: center;
+    
+    @screen x_sm{
+      max-width: 250px;
+    }
+    // transform: translateY(10px);
+  }
+  
+  form{
+    z-index: 1;
+    position: relative;
+    max-width: 500px;
+    
+    @apply rounded-3xl p-px border border-secondary;
+    @apply p-8 x_sm:px-16 x_sm:py-12 rounded-3xl bg-white;
+    
+    h1{
+      @apply text-xl pb-2 font-bold text-gray-800 dark:text-white;
+    }
+    
+    p{
+      @apply tracking-wide font-light text-gray-600 dark:text-gray-300;
+    }
+    
+    a{
+      @apply text-blue-600 transition duration-200 hover:underline dark:text-blue-400;
+    }
+  }
+}

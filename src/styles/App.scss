@@ -1,0 +1,38 @@
+@import "./libs/reset";
+@import "./libs/mixin";
+@import "./globals.scss";
+
+//pages
+@import "./pages/index";
+@import "./pages/login";
+@import "./pages/cart";
+@import "./pages/mis-ordenes";
+@import "./pages/factura";
+@import "./pages/success.scss";
+@import "./pages/seleccionar-empleados";
+@import "./pages/two-factor-auth";
+@import "./pages/usuarios";
+
+// components
+@import "../components/pages/login/styles/OTPInput";
+@import "../components/pages/styles/ProductItem";
+@import "../components/pages/styles/ProductFinder";
+@import "../components/pages/styles/ProductSkeleton";
+@import "../components/pages/activar-ficha/styles/DropZone";
+@import "../components/pages/activar-ficha/styles/SingleActivate";
+@import "../components/pages/factura/styles/BillItem";
+@import "../components/pages/selecionar-empleados/styles/Employees";
+@import "../components/pages/selecionar-empleados/styles/EmployeeItem";
+@import "../components/pages/selecionar-empleados/styles/EmployeeItem";
+@import "../components/pages/mis-ordenes/styles/BulletinDetailsModal";
+
+// widgets
+@import "../components/widgets/styles/Button";
+@import "../components/widgets/styles/Input";
+@import "../components/widgets/styles/Switch";
+@import "../components/widgets/styles/Spinner";
+@import "../components/widgets/styles/Modal";
+@import "../components/widgets/styles/ConfirmModal";
+@import "../components/widgets/styles/NotificationModal";
+@import "../components/widgets/Header/styles/Header";
+@import "../components/widgets/Header/styles/Cart";
